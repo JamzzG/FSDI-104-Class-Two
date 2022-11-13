@@ -1,4 +1,77 @@
+*{
+    background-color: lightpink;
+}
+@media screen and (max-width: 70rem){
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 70.1rem) {
+    
+    main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
 input, select{
     margin-bottom:1rem;
-    max-width: 30rem;
+    height: 2rem;
+    width: 600px;
+}
+
+.form-select .services{
+    font-size: x-large; 
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h1, h3{
+    background-image: radial-gradient(rgba(255, 105, 180, 0.495),rgba(255, 182, 193, 0.05)); 
+}
+
+h1,h2,h3{
+    color:aliceblue;
+    text-shadow: .3px .3px 4px rgb(240, 45, 143);
+    }
+
+body, main{
+    background-color: lightpink;
+    text-align: center;
+}
+
+.title {
+    font-size: 64px;
+}
+
+.nav-link{
+    color: hotpink;
+    font-size: large;
+    text-shadow: 1px 1px 2px black;
+}
+
+.nav{
+    justify-content: center;
+}
+
+img{
+    width:40rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 10%;
+}
+
+.btn {
+    text-transform: uppercase;;
+    letter-spacing: 3px;
+    font-weight: 900;
+    color: white;
+    background-color: rgb(242, 151, 196);
 }

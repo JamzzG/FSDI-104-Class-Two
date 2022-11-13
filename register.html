@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/mystyle..css">
-    <title>Document</title>
+    <title>Register</title>
 </head>
 <body>
     <ul class="nav">
@@ -21,31 +21,34 @@
         </li>
     </ul>
 
-    <h1>The Fashion Pet</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias obcaecati ducimus laudantium provident, vero nesciunt repellendus itaque quisquam enim nulla praesentium quas repellat minus ipsa eos fugiat sapiente a veniam!
-
+    <h1 class="title" id="title">The Fashion Pet</h1>
+    <p id="catch-phrase">
     </p>
 
-    <main>
+    <main class="container">
         <div class="container">
-            <h2>Add a new pet</h2>
+            <h2 class="new">Add a new pet</h2>
             <input class="form-control" type="text"  id="txtName"    placeholder="Enter pet's name: ">
             <input class="form-control" type="number"  id="numAge" placeholder="Enter pet's age: ">
             <input class="form-control" type="text" id="txtGender" placeholder="Enter pet's gender: ">
             <input class="form-control" type="text" id="txtBreed" placeholder="Enter pet's breed: ">
             <select class="form-select" id="selService">
-                <option value="">--Select the reason for the appointment--</option><!--Enabled option so I could get an alert if not selected-->
-                <option value="nails"> 🐾__Nails Cut__🐾</option>
-                <option value="vaccines">💉__Vaccines__💉</option>
-                <option value="grooming">✂️_Grooming_✂️</option>
+                <option value="">--Select a service--</option><!--Enabled option so I could get an alert if not selected-->
+                <option value="nails" class="services"> 🐾__Nails Cut__🐾</option>
+                <option value="vaccines" class="services">💉__Vaccines__💉<br></option>
+                <option value="grooming" class="services">✂️_Grooming_✂️</option>
 
             <input class="form-control" input type="text" id="txtOwner" placeholder="Please enter the Owner's name: ">
             <input class="form-control" input type="tel" id="numContact" placeholder="Please enter a contact phone number: ">
-            <button onclick="register()"   class="btn btn-warning">register</button>
+            <button onclick="register()"   class="btn btn-lg">register</button>
+        </div>
+        <div class="register-pic">
+            <img src="/Photos/dog-before-after.png" alt="">
         </div>
     </main>
     
-
+    <!-- <script src="scripts/display.js"></script> -->
     <script src="scripts/register.js"></script>
+
 </body>
 </html>
